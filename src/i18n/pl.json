@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Frontend",
+    "subtitle": "Developer",
+    "description": "Tworzę czytelne, estetyczne i nowoczesne interfejsy webowe. Pracuję z JavaScript, React i nowoczesnym frontend stackiem."
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "core": "Podstawy",
+    "ui": "Interfejs i style",
+    "tools": "Narzędzia",
+    "additional": "Dodatkowo"
+  },
+  "projects" : {
+    "title": "Projekty",
+    "admin": {
+        "description": "Responsywny panel administracyjny stworzony w React. Zawiera komponenty wielokrotnego użytku, layouty, formularze oraz podstawowe zarządzanie stanem po stronie klienta z użyciem danych mock."
+    },
+    "snake": {
+        "description": "Przeglądarkowa gra Snake zbudowana przy użyciu Phaser i JavaScript. Zawiera ruch po siatce, sterowanie klawiaturą, obsługę kolizji oraz system punktacji."
+    },
+    "tetris": {
+        "description": "Klasyczna gra Tetris zaimplementowana przy użyciu Phaser i JavaScript. Zawiera obracanie klocków, logikę kolizji, system punktacji oraz uporządkowaną pętlę gry."
+    }
+ 
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Jesteś zainteresowany współpracą lub masz pytania? Chętnie omówię szczegóły.",
+    "cta": "Napisz do mnie"
+  }
+}

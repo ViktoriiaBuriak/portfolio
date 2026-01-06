@@ -1,0 +1,23 @@
+:root {
+  --pink-main: #f472b6;
+  --pink-soft: #fce7f3;
+  --pink-dark: #ec4899;
+
+  --text-main: #1f2933;
+  --text-muted: #6b7280;
+
+  --bg-main: #ffffff;
+  --bg-alt: #fff5fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+}

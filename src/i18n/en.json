@@ -1,0 +1,37 @@
+{
+  "nav": {
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Frontend",
+    "subtitle": "Developer",
+    "description": "I build clean, thoughtful, and user-friendly web interfaces using JavaScript, React, and modern frontend technologies."
+  },
+  "skills": {
+    "title": "Skills",
+    "core": "Core Skills",
+    "ui": "UI & Styling",
+    "tools": "Tools",
+    "additional": "Additional"
+  },
+  "projects" : {
+    "title": "Projects",
+    "admin": {
+        "description": "A responsive admin dashboard built with React. Includes reusable components, layouts, forms, and basic client-side state management using mock data."
+    },
+    "snake": {
+        "description": "A browser-based Snake game built with Phaser and JavaScript. Features grid-based movement, keyboard controls, collision detection, and score tracking."
+    },
+    "tetris": {
+        "description": "A classic Tetris game implemented using Phaser and JavaScript. Includes block rotation, collision logic, scoring system, and a structured game loop."
+    }
+ 
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Interested in working together or have any questions? I’d be happy to discuss the details.",
+    "cta": "Get in touch"
+  }
+}

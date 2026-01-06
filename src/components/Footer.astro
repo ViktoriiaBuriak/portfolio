@@ -1,0 +1,55 @@
+<footer class="footer">
+  <div class="container">
+    <p class="copy">
+      © <span id="year"></span> Viktoriia Buriak
+    </p>
+
+    <p class="note">Frontend Developer · Portfolio</p>
+  </div>
+
+  <script>
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = String(new Date().getFullYear());
+    }
+  </script>
+</footer>
+
+<style>
+  .footer {
+    padding: 3rem 1rem;
+    background: var(--bg-main);
+    border-top: 1px solid var(--pink-soft);
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Main line */
+  .copy {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    margin-bottom: 0.4rem;
+  }
+
+  /* Accent underline */
+  .copy::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--pink-main);
+    margin: 0.6rem auto 0;
+  }
+
+  /* Secondary text */
+  .note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+</style>

@@ -1,0 +1,235 @@
+<section class="projects" id="projects">
+  <div class="container">
+    <h2 data-i18n="projects.title"></h2>
+
+    <div class="grid">
+      <!-- Admin Dashboard -->
+      <article class="card">
+        <div class="media">
+          <img
+            src="/projects/admin-dashboard.png"
+            alt="Admin dashboard interface"
+            loading="lazy"
+          />
+        </div>
+
+        <h3>Admin Dashboard</h3>
+        <p class="description" data-i18n="projects.admin.description"></p>
+
+        <ul class="stack">
+          <li>React</li>
+          <li>JavaScript</li>
+          <li>CSS</li>
+        </ul>
+
+        <div class="links">
+          <a href="https://admin-dashboard-inky-one-53.vercel.app/" target="_blank">
+            Live demo
+          </a>
+          <a href="https://github.com/ViktoriiaBuriak/admin-dashboard" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Snake -->
+      <article class="card">
+        <div class="media">
+          <img
+            src="/snake.gif"
+            alt="Snake game gameplay"
+            loading="lazy"
+          />
+        </div>
+
+        <h3>Snake Game</h3>
+        <p class="description" data-i18n="projects.snake.description"></p>
+
+        <ul class="stack">
+          <li>JavaScript</li>
+          <li>Phaser</li>
+          <li>Canvas</li>
+        </ul>
+
+        <div class="links">
+          <a href="https://snake-phaser.vercel.app/" target="_blank">Live demo</a>
+          <a href="https://github.com/ViktoriiaBuriak/snake-phaser" target="_blank">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Tetris -->
+      <article class="card">
+        <div class="media">
+          <img
+            src="#"
+            alt="Tetris game gameplay"
+            loading="lazy"
+          />
+        </div>
+
+        <h3>Tetris Game</h3>
+        <p class="description" data-i18n="projects.tetris.description"></p>
+
+        <ul class="stack">
+          <li>JavaScript</li>
+          <li>Phaser</li>
+          <li>Canvas</li>
+        </ul>
+
+        <div class="links">
+          <a href="https://tetris-phaser.vercel.app/" target="_blank">Live demo</a>
+          <a href="https://github.com/ViktoriiaBuriak/tetris-phaser" target="_blank">GitHub</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<style>
+.projects {
+  padding: 6rem 0;
+  background: var(--bg-alt);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section title */
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3.5rem;
+  color: var(--text-main);
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 70%;
+  height: 3px;
+  background: var(--pink-main);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+/* Card */
+.card {
+  background: var(--bg-main);
+  border: 2px solid var(--pink-soft);
+  border-radius: 18px;
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--pink-main);
+  box-shadow: 0 16px 40px rgba(236, 72, 153, 0.25);
+}
+
+/* Media */
+.media {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1.4rem;
+  border: 1px solid var(--pink-soft);
+}
+
+.media img {
+  width: 100%;
+  display: block;
+}
+
+/* Text */
+.card h3 {
+  margin-bottom: 0.8rem;
+  color: var(--text-main);
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.2rem;
+}
+
+/* Stack */
+.stack {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.stack li {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--pink-main);
+  color: var(--pink-dark);
+  background: var(--bg-alt);
+}
+
+/* Links */
+.links a {
+  margin-right: 1.2rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  position: relative;
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: var(--pink-main);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s ease;
+}
+
+.links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

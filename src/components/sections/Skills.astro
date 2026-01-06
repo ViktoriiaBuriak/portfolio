@@ -1,0 +1,173 @@
+<section class="skills" id="skills">
+  <div class="container">
+    <h2 data-i18n="skills.title"></h2>
+
+    <div class="grid">
+      <div class="group">
+        <h3 data-i18n="skills.core"></h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React</li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <h3 data-i18n="skills.ui"></h3>
+        <ul>
+          <li>Responsive / Adaptive layout</li>
+          <li>Flexbox, Grid</li>
+          <li>Tailwind CSS</li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <h3 data-i18n="skills.tools"></h3>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>npm</li>
+          <li>Vite</li>
+        </ul>
+      </div>
+
+      <div class="group">
+        <h3 data-i18n="skills.additional"></h3>
+        <ul>
+          <li>Phaser (game logic)</li>
+          <li>Canvas-based rendering</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.skills {
+  padding: 6rem 0;
+  background: var(--bg-main);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section title */
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 3.5rem;
+  color: var(--text-main);
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 70%;
+  height: 3px;
+  background: var(--pink-main);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Skill card */
+.group {
+  position: relative;
+  padding: 2rem 1.8rem;
+  border: 2px solid var(--pink-soft);
+  border-radius: 18px;
+  background: var(--bg-alt);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+.group:nth-child(1) { animation-delay: 0.1s; }
+.group:nth-child(2) { animation-delay: 0.2s; }
+.group:nth-child(3) { animation-delay: 0.3s; }
+.group:nth-child(4) { animation-delay: 0.4s; }
+
+/* Accent corner */
+.group::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--pink-main);
+}
+
+/* Group title */
+.group h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--text-main);
+}
+
+/* List */
+.group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.group li {
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.group li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pink-main);
+}
+
+/* Hover */
+.group:hover {
+  transform: translateY(-8px);
+  border-color: var(--pink-main);
+  box-shadow: 0 14px 35px rgba(236, 72, 153, 0.25);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
