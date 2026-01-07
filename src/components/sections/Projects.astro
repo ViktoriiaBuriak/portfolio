@@ -1,3 +1,9 @@
+---
+import snakeImage from "../../assets/snake.gif"
+import dashboardImage from "../../assets/dashboard.png"
+import tetrisImage from "../../assets/tetris.gif"
+---
+
 <section class="projects" id="projects">
   <div class="container">
     <h2 data-i18n="projects.title"></h2>
@@ -7,7 +13,7 @@
       <article class="card">
         <div class="media">
           <img
-            src="/projects/admin-dashboard.png"
+            src={dashboardImage.src}
             alt="Admin dashboard interface"
             loading="lazy"
           />
@@ -36,7 +42,7 @@
       <article class="card">
         <div class="media">
           <img
-            src="/snake.gif"
+            src={snakeImage.src}
             alt="Snake game gameplay"
             loading="lazy"
           />
@@ -61,7 +67,7 @@
       <article class="card">
         <div class="media">
           <img
-            src="#"
+            src={tetrisImage.src}
             alt="Tetris game gameplay"
             loading="lazy"
           />
@@ -157,7 +163,9 @@ h2::after {
 
 .media img {
   width: 100%;
+  height: 180px;
   display: block;
+  object-fit: cover;
 }
 
 /* Text */
