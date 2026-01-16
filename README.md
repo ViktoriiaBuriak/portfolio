@@ -78,3 +78,5 @@ If you’d like to get in touch — feel free to reach out via the contact secti
 ---
 
 © 2026 Viktoriia Buriak
+
+test
